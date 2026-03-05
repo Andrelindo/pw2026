@@ -1,3 +1,12 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+class Index(TemplateView):
+    template_name = "website/inicio.html"
+
+class Sobre (TemplateView):
+    template_name = "website/sobre.html"
+
+class Contato (TemplateView):
+    template_name = "website/contato.html"
+
+
